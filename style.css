@@ -1,0 +1,284 @@
+body {
+	background-color: #100e17 !important;
+  	font-family: "Times New Roman", Times, serif !important;
+	color: white !important;
+}
+#Main{
+    height: 99vh;
+}
+a, a:hover, a:focus{
+	text-decoration: none !important;
+}
+.ArrowDown{
+    width:100%;
+    bottom: -0px;
+    position:absolute;
+    transition: 1s;
+	color: white;
+    cursor: pointer;
+    font-size:  5rem;
+    text-align: center;
+    animation: ArrowAnimate 1s infinite alternate;
+}
+
+@keyframes ArrowAnimate {
+    0% {
+		font-size: 4rem;
+		color:rgb(0, 128, 217);
+	}
+    100% {
+		font-size: 6rem;
+		color:rgb(255, 122, 0);
+	}
+}
+#Main .topBar{
+	height: 5vh;
+	direction: rtl;
+	background: #454545;
+}
+.en{
+	padding: .1rem .5rem;
+	font-weight: bold;
+	float: right;
+}
+#Nav{
+	padding-top: 4px;
+	background: linear-gradient(90deg, rgb(255, 122, 0) 0%, rgb(0, 128, 217) 100%);
+	padding-bottom: .1%;
+	font-size: 18px;
+	height: 45px;
+}
+#Nav ul li{
+	list-style: none;
+	display: inline-block;
+	transition: .5s;
+	cursor: pointer;
+	text-align: center;
+}
+#Nav ul li:hover{
+	font-size: 22px;
+}
+.acc{
+	float: left;
+	margin-top: 2px;
+	margin-left: 2px;
+}
+#Main .topBar .icon{
+	height: 30px;
+}
+#Main .topBar .last{
+	border-right: 2px solid #ccc;
+	padding-right: 8px;
+}
+#Main .mainClass{
+	background: #fff;
+	height: 95vh;
+	color: #010101;
+	padding-top: 5%;
+	padding-left: 20%;
+}
+
+
+.containerAccs:first-child {
+	margin-top: 5%
+}
+.containerAccs {
+  height: 300px;
+  padding: 10px 6%;
+  display: flex;
+}
+
+.cardAccs {
+	cursor: default;
+ display: flex;
+  height: 280px;
+  width: 200px;
+  background-color: #17141d;
+  border-radius: 10px;
+  box-shadow: -1rem 0 3rem #000;
+/*   margin-left: -50px; */
+  transition: 0.4s ease-out;
+  position: relative;
+  left: 0px;
+}
+
+.cardAccs:not(:first-child) {
+    margin-left: -50px;
+}
+.cardAccs:hover {
+  transform: translateY(-20px);
+  transition: 0.4s ease-out;
+}
+
+.cardAccs:hover  img  {
+  opacity: 1;
+  transition: 0.4s ease-out;
+}
+
+.cardAccs:hover  .title {
+   opacity: 1;
+  transition: 0.4s ease-out;
+}
+
+
+.cardAccs:hover .details {
+   opacity: 1;
+  transition: 1s ease-out;
+}
+
+
+.cardAccs:hover ~ .cardAccs {
+  position: relative;
+  left: 50px;
+  transition: 0.4s ease-out;
+}
+
+
+.title {
+	color: white;
+	font-weight: bold;
+	position: absolute;
+	text-align: center;
+	width: 100%;
+	font-size: 1.8rem;
+	margin: 0;
+	margin-top: 8px;
+	opacity: .5;
+}
+
+.bar {
+  position: absolute;
+  height: 5px;
+  width: 100%;
+}
+
+.emptybar {
+  background-color: #2e3033;
+  width: 100%;
+  height: 100%;
+}
+
+.filledbar {
+  position: absolute;
+  top: 0px;
+  z-index: 3;
+  width: 0px;
+  height: 100%;
+  background: rrgb(0, 128, 217);
+  background:linear-gradient(90deg, rgb(255, 122, 0) 0%, rgb(0, 128, 217) 100%);
+  transition: 0.6s ease-out;
+}
+
+.cardAccs:hover .filledbar {
+  width: 100%;
+  transition: 0.4s ease-out;
+}
+
+.cardAccs img{
+	position: absolute;
+	top: 55px;
+	opacity: .5;
+	height: 150px;
+}
+
+
+.details{
+	width: 100%;
+	height: 40%;
+	position: absolute;
+	bottom: -52px;
+	opacity: .5;
+}
+.details .part{
+	width: 31%;
+	display: inline-block;
+	text-align: center;
+	background: #17141d;
+	transition: .5s;
+}
+.details .part .stat-value{
+	transition: .5s;
+	color: #17141d;
+}
+.details .part .stat{
+	padding-bottom: 5px;
+	font-size: 1.2rem;
+	font-weight: bold;
+	cursor: pointer;
+	transform: rotate(-22deg);
+	top: 7px;
+	position: relative;
+	transition: .5s;
+}
+.details .stat:hover{
+	transform: rotate(0deg);
+}
+.details .stat:hover ~ .stat-value{
+	color: white;
+}
+.details .part .circle{
+	background: rgb(0, 128, 217);
+	border-radius: 50%;
+	color: white;
+	font-size: 1rem;
+	padding: 7px;
+	transform: rotate(0deg) !important;
+	transition: 1s;
+	top: 8px;
+	right: 5px;
+	box-shadow: 1px 1px 1px #ccc;
+}
+.details .part .circle:hover{
+	background: rgb(255, 122, 0);
+}
+.details .part .circle:focus{
+	box-shadow: 0px 0px 0px #ccc;
+}
+a,a:hover,a:focus{
+	text-decoration: none;
+}
+/*linear-gradient(90deg, rgba(0,154,217,1) 0%, rgba(217,147,0,1) 65%, rgba(255,186,0,1) 100%)*/
+.modal-dialog {
+    max-width: 90vw!important;
+	direction: rtl;
+	text-align: right;
+	color: #17171d;
+}
+.modal-header .close {
+    padding: 1rem 1rem;
+    margin: -1rem auto -1rem -1rem !important;
+}
+.modal-title {
+	width: 100%;
+	text-align: right;
+    margin-bottom: 0;
+    line-height: 1.5;
+    font-size: 1.5rem;
+    color: #17171d;
+    font-weight: bold;
+}
+.clear{
+	height: 100px
+}
+.Line{
+	margin: 0;
+	margin-top: 5%;
+	background: linear-gradient(90deg, rgb(255, 122, 0) 0%, rgb(0, 128, 217) 100%);
+	height: 7px;
+}
+.LineTop{
+	margin: 0;
+	background: linear-gradient(90deg, rgb(255, 122, 0) 0%, rgb(0, 128, 217) 100%);
+	height: 7px;
+}
+#Footer{
+	text-align: center;
+	background: #ecf0f1;
+	color: #17141d;
+	padding: 2%;
+}
+#Footer p{
+	margin: 0;
+	box-shadow: 5px 5px 40px #ccc;
+	padding: 10px;
+}

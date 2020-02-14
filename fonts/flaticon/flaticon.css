@@ -1,0 +1,33 @@
+.flaticon-whatsapp:before {
+	content: "\e001";
+}
+.flaticon-facebook:before {
+	content: "\e002";
+}
+.flaticon-twitter:before {
+	content: "\e003";
+}
+.flaticon-instagram-logo:before {
+	content: "\e004";
+}
+.flaticon-snapchat:before {
+	content: "\e005";
+}
+.flaticon-next:before {
+	content: "\e006";
+}
+.flaticon-back:before {
+	content: "\e007";
+}
+.flaticon-maps-and-flags:before {
+	content: "\e008";
+}
+.flaticon-phone-call:before {
+	content: "\e009";
+}
+.flaticon-e-mail-envelope:before {
+	content: "\e00a";
+}
+.flaticon-internet:before {
+	content: "\e00b";
+}
